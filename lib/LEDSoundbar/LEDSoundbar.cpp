@@ -3,7 +3,7 @@
 LEDSoundbar::LEDSoundbar(uint8_t dataPin, int LEDCount, CRGB minVolumeColor, CRGB maxVolumeColor) : LEDCount(LEDCount), minVolumeColor(minVolumeColor), maxVolumeColor(maxVolumeColor)
 {
   this->LEDs = new CRGB[LEDCount];
-  FastLED.addLeds<NEOPIXEL, 2>(this->LEDs, LEDCount);
+  FastLED.addLeds<NEOPIXEL, dataPin>(this->LEDs, LEDCount);
 }
 
 LEDSoundbar::~LEDSoundbar()
