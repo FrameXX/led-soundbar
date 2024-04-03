@@ -3,15 +3,16 @@
 #include <LEDSoundbar.h>
 #include <Clamp.h>
 #include <Amplify.h>
+#include <RollingArray.h>
 
 #define LED_PIN1 3
 #define LED_PIN2 4
 #define NUM_LEDS 16
 
-#define MICROPHONE_PIN A0
-#define MIN_VOLUME_VOLTAGE 32
-#define MAX_VOLUME_VOLTAGE 64
-#define VOLUME_AMPLIFY_EXPONENT 1
+#define MICROPHONE_PIN A1
+#define MIN_VOLUME_VOLTAGE 43
+#define MAX_VOLUME_VOLTAGE 59
+#define VOLUME_AMPLIFY_EXPONENT 0.6
 
 #define DELAY_MS 10
 
