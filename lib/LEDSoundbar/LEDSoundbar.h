@@ -50,9 +50,9 @@ public:
 
   CRGB getVolumeColor(int volume)
   {
-    const char r = map(volume, 0, 1024, this->minVolumeColor.r, this->minVolumeColor.r);
-    const char g = map(volume, 0, 1024, this->minVolumeColor.g, this->minVolumeColor.g);
-    const char b = map(volume, 0, 1024, this->minVolumeColor.b, this->minVolumeColor.b);
+    const char r = map(volume, 0, 1024, this->minVolumeColor.r, this->maxVolumeColor.r);
+    const char g = map(volume, 0, 1024, this->minVolumeColor.g, this->maxVolumeColor.g);
+    const char b = map(volume, 0, 1024, this->minVolumeColor.b, this->maxVolumeColor.b);
     return CRGB(r, g, b);
   }
 };

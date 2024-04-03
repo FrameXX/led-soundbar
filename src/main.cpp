@@ -15,8 +15,8 @@
 
 #define DELAY_MS 10
 
-CRGB minVolumeColor(128, 128, 255);
-CRGB maxVolumeColor(255, 128, 128);
+CRGB minVolumeColor(0, 255, 0);
+CRGB maxVolumeColor(255, 0, 0);
 
 LEDSoundbar<LED_PIN1> soundbar1(NUM_LEDS, minVolumeColor, maxVolumeColor);
 
